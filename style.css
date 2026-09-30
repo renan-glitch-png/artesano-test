@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    color: #ededed;
+    background-color: #fdfcfb;
+}
+
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    z-index: 1; 
+}
+
+#hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -2; 
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1b1f05c8;
+    opacity: 0.8; 
+    z-index: -1; 
+}
+
+#hero div {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 30px;
+}
+
+#hero h1 {
+    font-weight: 400;
+    font-size: 120px;
+    letter-spacing: 0.14em;
+}
+
+#hero h2 {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 1em;
+    background-color: rgba(255, 255, 255, 0.04); 
+    padding: 8px 24px; 
+}
+
+#hero h2::before,
+#hero h2::after {
+    content: "";
+    display: block;
+    width: 60px; 
+    border-top: 2px solid #6f7276; 
+}
+
+#hero h2::before , #hero h2::after {
+    margin-right: 10px;
+}
+
+#hero p {
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 0.30em;
+}
+
+span {
+  font-size: 20px;  
+}
+/*nav*/
+.menu {
+
+}
+
+/*ul*/
+.menu-list {
+    list-style: none;
+    display: flex;
+}
+
+/*li*/
+.menu-item {
+
+}
+
+/*a*/
+.menu-link {
+    text-decoration: none;
+    color: #6a6a6a;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.26em;
+}
+
+#menu-logo{
+    border: 1px solid black;
+}
