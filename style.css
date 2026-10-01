@@ -89,6 +89,7 @@ span {
 }
 /*nav*/
 .menu {
+    padding: 10px;
 
 }
 
@@ -96,6 +97,11 @@ span {
 .menu-list {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
 /*li*/
@@ -109,9 +115,50 @@ span {
     color: #6a6a6a;
     font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 0.26em;
 }
 
-#menu-logo{
+#menu-logo a {
     border: 1px solid black;
+    display: block;
+    padding: 5px  10px;
+    text-align: center;
+    color: #000;
+    letter-spacing: 0;
+
 }
+#menu-logo a:hover {
+    color: #6a6a6a;
+    border-color: #6a6a6a;
+}
+/*estudio*/
+#estudio {
+    background-color: #f4f4f5 ;
+    color:#000;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#estudio-itens {
+display:flex ;
+gap: 40px;
+justify-content: center;
+align-items: center;
+
+}
+#estudio p{
+    max-width: 400px;
+    text-align: justify     ;
+}
+#estudio-itens div {
+    display: flex;
+    flex-direction: column;
+}
+
+#estudio-itens div img {
+    width:  30px;
+ 
+}
+
