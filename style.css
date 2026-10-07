@@ -130,10 +130,22 @@ span {
     color: #6a6a6a;
     border-color: #6a6a6a;
 }
+/* SECTIONS*/
+section.light {
+    color: #000;
+    background-color: #f4f4f5;
+}
+section.dark {
+    background-color: black;
+    color: #f4f4f5;
+}
+section.section-title {
+    letter-spacing: 0.10em;
+}
+
+
 /*estudio*/
 #estudio {
-    background-color: #f4f4f5 ;
-    color:#000;
     height: 75vh;
     display: flex;
     flex-direction: column;
@@ -141,22 +153,21 @@ span {
     align-items: center;
     gap: 30px;
 }
-#estudio-itens {
+#estudio-itens div {
 display:flex ;
-gap: 40px;
 justify-content: center;
 align-items: center;
+flex-direction: column;
 
 }
 #estudio p{
     max-width: 400px;
     text-align: justify     ;
 }
-#estudio-itens div {
+#estudio-itens {
     display: flex;
-    flex-direction: column;
+    gap: 100px;
 }
-
 #estudio-itens div img {
     width:  30px;
  
