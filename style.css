@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Jost', sans-serif;
+
     color: #ededed;
     background-color: #fdfcfb;
 }
@@ -13,12 +13,12 @@ body {
 #hero {
     position: relative;
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     text-align: center;
-    z-index: 1; 
+    z-index: 1;
 }
 
 #hero img {
@@ -27,8 +27,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; 
-    z-index: -2; 
+    object-fit: cover;
+    z-index: -2;
 }
 
 #hero::before {
@@ -39,13 +39,13 @@ body {
     width: 100%;
     height: 100%;
     background-color: #1b1f05c8;
-    opacity: 0.8; 
-    z-index: -1; 
+    opacity: 0.8;
+    z-index: -1;
 }
 
 #hero div {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     gap: 30px;
 }
@@ -62,19 +62,20 @@ body {
     font-weight: 300;
     font-size: 15px;
     letter-spacing: 1em;
-    background-color: rgba(255, 255, 255, 0.04); 
-    padding: 8px 24px; 
+    background-color: rgba(255, 255, 255, 0.04);
+    padding: 8px 24px;
 }
 
 #hero h2::before,
 #hero h2::after {
     content: "";
     display: block;
-    width: 60px; 
-    border-top: 2px solid #6f7276; 
+    width: 60px;
+    border-top: 2px solid #6f7276;
 }
 
-#hero h2::before , #hero h2::after {
+#hero h2::before,
+#hero h2::after {
     margin-right: 10px;
 }
 
@@ -85,10 +86,14 @@ body {
 }
 
 span {
-  font-size: 20px;  
+    font-size: 20px;
 }
+
 /*nav*/
 .menu {
+    background-color: #f4f4f5;
+    position: sticky;
+    top: 0;
     padding: 10px;
 
 }
@@ -105,9 +110,7 @@ span {
 }
 
 /*li*/
-.menu-item {
-
-}
+.menu-item {}
 
 /*a*/
 .menu-link {
@@ -120,25 +123,29 @@ span {
 #menu-logo a {
     border: 1px solid black;
     display: block;
-    padding: 5px  10px;
+    padding: 5px 10px;
     text-align: center;
     color: #000;
     letter-spacing: 0;
 
 }
+
 #menu-logo a:hover {
     color: #6a6a6a;
     border-color: #6a6a6a;
 }
+
 /* SECTIONS*/
 section.light {
     color: #000;
     background-color: #f4f4f5;
 }
+
 section.dark {
     background-color: black;
     color: #f4f4f5;
 }
+
 section.section-title {
     letter-spacing: 0.10em;
 }
@@ -153,23 +160,66 @@ section.section-title {
     align-items: center;
     gap: 30px;
 }
+
 #estudio-itens div {
-display:flex ;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
-#estudio p{
+
+#estudio p {
     max-width: 400px;
-    text-align: justify     ;
+    text-align: justify;
 }
+
 #estudio-itens {
     display: flex;
     gap: 100px;
 }
+
 #estudio-itens div img {
-    width:  30px;
- 
+    width: 30px;
+
 }
 
+#colecoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 75%;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 0px;
+
+}
+
+#colecoes table {
+    width: 90%;
+    font-size: 25px;
+    border-collapse: collapse;
+}
+
+#colecoes table th,
+#colecoes table td {
+    text-align: left;
+    padding: 25px;
+    border-top: 1px solid #3a3d41;
+    border-bottom: 1px solid #3a3d41;
+}
+
+#colecoes p {
+    text-align: center;
+    font-size: 24px;
+    max-width: 600px;
+}
+
+#colecoes a {
+    text-decoration: none;
+    color: #f4f4f5;
+    border: 1px solid #f4f4f5;
+    border-radius: 50px;
+    padding: 15px 40px;
+    font-size: 34px;
+}
