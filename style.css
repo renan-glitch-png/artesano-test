@@ -110,7 +110,6 @@ span {
 }
 
 /*li*/
-.menu-item {}
 
 /*a*/
 .menu-link {
@@ -222,4 +221,46 @@ section.section-title {
     border-radius: 50px;
     padding: 15px 40px;
     font-size: 34px;
+}
+/* CONTATO */
+
+#contato {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+form .form-inline {
+    display: flex;
+    gap: 10px;
+}
+#contato p {
+    text-align: center;
+}
+form .form-inline label,
+form form .label-block {
+    display: block;
+    margin: 15px 0;
+}
+form .form-inline input,
+form .form-inline div {
+    width: 100%;
+}
+form input, form textarea {
+    padding: 8px;
+}
+form .input-radio,
+form .input-checkbox {
+    display: flex;
+    gap: 5px;
+}
+form .input-recado label {
+    display: block;
+    margin: 15px 0;
+}
+form .input-recado textarea {
+    width: 100%;
+    height: 150px;
 }

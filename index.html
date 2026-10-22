@@ -116,10 +116,53 @@
             acaba. Nada é refeito depois: o molde é quebrado e a coleção seguinte
             começa do papel em branco.
         </p>
-        <p> 
+        <p>
             Os prazos acima contam a partir da confirmação. O frete é combinado
             peça a peça, porque nenhuma delas viaja igual.</p>
         <a href="#">Pedir catálogo</a>
+    </section>
+    <section id="contato" class="light">
+        <h2>Peça o catalogo</h2>
+        <p>
+            A edição de inverno abre em 14 de setembro.Deixe seu contato e enviamos 
+            <br>o catalogo impresso, 
+             com as medidas e os preços de cada peça.
+        </p>
+        <form action="https://webhook.site/1ab6e97f-60f8-495f-89fe-50d4ca3107dd">
+            <div class="form-inline">
+                <div>
+                    <label>Nome</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div>
+                    <label>E-mail</label>
+                    <input type="text" name="e-mail" required>
+                </div>
+            </div>
+            <span class="label-block">Oque te interessa</span>
+            <div class="input-radio">
+                <input type="radio" id="catalogo" name="interrese" value="catalogo">
+                <label for="catalogo">Só o catalogo</label>
+                <input type="radio" id="peca" name="interrese" value="peca">
+                <label for="peca">Uma peça especifica</label>
+                <input type="radio" id="encomenda" name="interrese" value="encomenda" >
+                <label for="encomenda">Encomenda sob medida</label>
+            </div>
+            <span class="label-block">O que mais encaixa no seu estilo</span>
+            <div class="input-checkbox">
+                <input type="checkbox" id="terracota" name="estilo[]" value="terracota">
+                <span for="terracota">Terracota</span>
+                <input type="checkbox" id="off-white" name="estilo[]"  value="off-white">
+                <span for="off-white">Off white</span>
+                <input type="checkbox" id="black" name="estilo[]" value="black">
+                <span for="black">Black</span>
+            </div>
+            <div class="input-recado">
+                <label>Recado (opcional)</label>
+                <textarea></textarea>
+            </div >
+            <button>Enviar Pedido</button>
+        </form>
     </section>
 </body>
 
